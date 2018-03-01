@@ -54,6 +54,7 @@ passport.use(new Auth0Strategy({
             db.create_user([name, sub]).then(response => {
                 done([null, response[0].id])
             })
+            
         }
     })
 }))
