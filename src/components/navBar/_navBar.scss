@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+
+.main-nav {
+    overflow: hidden;
+    height: 109px;
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: 400px;
+    margin-bottom: 0px;
+    margin-left: 400px;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    
+    // border-bottom-left-radius: 4px;
+    // border-bottom-right-radius: 4px; 
+    
+}
+
+
+.main-nav-border {
+    overflow: hidden;
+    height: 114px;
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: 395px;
+    margin-bottom: 0px;
+    margin-left: 395px;
+    background-color: rgb(41, 41, 41);
+    position: absolute;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; 
+    
+}
+
+
+
+
+//BUTTON CSS
+$navBtnHeight: 105px;
+$navBtnWidth: 100px;
+
+.btn {
+    height: $navBtnHeight;
+    width: $navBtnWidth;
+    text-align: center; 
+    position: absolute;
+    border-radius: 0px;
+    box-shadow: 0 5px;
+    color: #44D62C;
+    background-color: rgb(51, 51, 51);
+    border-color: rgb(41, 41, 41) ;
+    font-family: "play";
+}
+
+.razor-logo {
+    background-image: url('https://d1urewwzb2qwii.cloudfront.net/sys-master/images/h6c/he1/8858452525086/wordmark.svg') ;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    margin-top: 38px;
+    margin-left: 100px
+}
+.razor-small-logo {
+    background-image: url('https://d1urewwzb2qwii.cloudfront.net/sys-master/images/h5a/hde/8858452459550/thus.svg')
+}
+
+
+.cart {
+    margin-left: 1010px
+}
+
+
+.login {
+    margin-left:  910px;
+}
+
+.contact {
+    margin-left: 810px;
+}
+
+.about {
+    margin-left: 710px;
+    
+}
+
+.headset {
+    margin-left: 610px;
+    
+}
+
+.keyboard {
+    margin-left: 510px;
+   
+}

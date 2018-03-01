@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+
+//http://image.noelshack.com/fichiers/2015/14/1428096341-razer-rendering.jpg
+//https://www.cinema5d.com/wp-content/uploads/2017/01/Razer-Valerie-_-featured.jpg
+.product-background-img{
+   background: url('https://assets.razerzone.com/eedownloads/desktop-wallpapers/RZR_Space_1920x1080.png') no-repeat center center;
+   height: 100vh;
+   width: 100vw;
+}
+
+%round{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.product-container-border{
+    background-color:    rgb(51, 51, 51);
+    width: 100%;
+    height: 50vh;
+    margin: 300px 0 0 0 ;
+    position: absolute;
+    @extend %round;
+}
+
+.product-container {
+    background-color:  rgb(31, 31, 31);
+    width: 99.5vw;
+    height: 49.2vh;
+    margin: 3.5px 3.5px 3.5px 3.5px;
+    position: absolute;
+    @extend %round;
+}
+
+
+.img {
+    // background-color:black;
+    // color:  #44D62C;
+    // text-align: center;
+    // height: 300px;
+    margin: 20px 1px 1px 100px;
+    // position: absolute;
+    background: #111;
+    border-bottom: 1px solid #44D62C;
+    height: 350px;
+    width: 309px;
+    @extend %round;
+}
+
+.description {
+    background-color:black;
+    color:  #44D62C;
+    height: 250px;
+    width: 600px;
+    margin: 100px 0 0 700px;
+    position: absolute
+}
+
+.add-to-cart {
+    background-color: black;
+    color: #44D62C;
+    border: none;
+
+}
+
+.product-text {
+    color: #44D62C;
+}
+
+
+// .img-holder{
+//     @extend %round;
+//     background: grey;
+//     width: 300px;
+//     height: 200px;
+    
+   
+// }
+
+.img-handler{
+    height: 300px;
+    margin: 0px 0px 0px 3.5px;
+    @extend %round;
+    background: grey;
+}
+// #000;
+

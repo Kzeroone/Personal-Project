@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+
+//http://image.noelshack.com/fichiers/2015/14/1428096341-razer-rendering.jpg
+//https://www.cinema5d.com/wp-content/uploads/2017/01/Razer-Valerie-_-featured.jpg
+.background-img{
+   background:  url('http://image.noelshack.com/fichiers/2015/14/1428096341-razer-rendering.jpg') no-repeat center center;
+   height: 100vh;
+   width: 100vw;
+}
+
+
+.quote {
+    font-weight: 200;
+    color: #999;
+    font-family: 'play';
+    text-align: center;
+    height: 50vh;
+    padding: 269px 50px 50px 50px;
+}
+
+.quote h1 {
+    margin-bottom: 20px;
+    font-size: 30px
+}
+
+.quote h3 {
+    font-size: 20px
+}

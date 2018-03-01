@@ -1,0 +1,69 @@
+.headset-background-img{
+    background: url('https://assets.razerzone.com/eedownloads/desktop-wallpapers/cosmic-1920x1080.jpg') no-repeat center center;
+    height: 100vh;
+    width: 100vw;
+ }
+
+
+
+.space {
+    height: 150px;
+    width: 100vw;
+    padding: 0 0 10px 0;
+}
+
+.grid-container {
+    background-color: #333333;
+    padding: .625rem 0 2.5rem;
+    width: 100%;
+    max-width: 1271.5px;
+    margin: 0 auto;
+    height: 69.5vh;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+.head-boxing {   
+    background: #111;
+    border-bottom: 1px solid #44D62C;
+    height: auto;
+    width: 309px; 
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+
+.text-color {
+    color:#44D62C
+}
+
+.head-product-containe {
+    height: 360px;
+    // background: black;
+    // box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+    float: left;
+    list-style: none;
+    // margin: 1% 1% 0 0;
+    overflow: hidden;
+    padding: 0 0 0 6.2px;
+    position: relative;
+    width: 310px;
+    // 15px 10px
+}
+
+.head-img{
+    height: 300px;
+    width: 300px
+}
+
+.view-detail {
+    color: #44D62C;
+    border: none;
+    background: none;
+}
