@@ -40,11 +40,11 @@
     // color:  #44D62C;
     // text-align: center;
     // height: 300px;
-    margin: 20px 1px 1px 100px;
+    margin: 10px 1px 1px 100px;
     // position: absolute;
     background: #111;
     border-bottom: 1px solid #44D62C;
-    height: 350px;
+    height: 300px;
     width: 309px;
     @extend %round;
 }
@@ -67,6 +67,8 @@
 
 .product-text {
     color: #44D62C;
+    font-size: 40px;
+    margin: 10px 0 0 430px;
 }
 
 
@@ -83,7 +85,7 @@
     height: 300px;
     margin: 0px 0px 0px 3.5px;
     @extend %round;
-    background: grey;
+   
 }
 // #000;
 

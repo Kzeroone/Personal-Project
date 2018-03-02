@@ -35,12 +35,12 @@ addProduct(prod, props){
       return (
         
         
-        
-        <div key={i} className="img">
-          <div className='img-holder'></div>
-        <img src={getProduct.image} className="img-handler"/>
-        <h1 className='product-text'>{getProduct.name}</h1>
-        <button onClick={() => this.addProduct(getProduct.id)}>Add to Cart</button>
+        <div>
+          <h1 className='product-text'>{getProduct.name}</h1> 
+          <div key={i} className="img">
+            <img src={getProduct.image} className="img-handler"/>
+          </div>
+          <button onClick={() => this.addProduct(getProduct.id)}>Add to Cart</button> 
         </div>
      
       )
@@ -51,7 +51,7 @@ addProduct(prod, props){
 
     return(
       <div> 
-        <NavBar />
+        {/* <NavBar /> */}
         <section className="product-background-img">
           <div className="product-container-border">
             <div className="product-container">
