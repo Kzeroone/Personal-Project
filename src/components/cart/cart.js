@@ -56,27 +56,54 @@ class Cart extends Component {
     let cart = this.props.fullCart.map((cartItem,i) => {
       return(
         <div key={i}>
-          <div>{cartItem.name}</div>
-          <div>{cartItem.price}</div>
-          <input type="number" placeholder={cartItem.quantity} onChange={(e) => this.handleQuantity(e.target.value, cartItem.cart_id)}/><button onClick={() => this.handleQuantityClick()}>Update qty</button>
+         <div className="cart-product-container-border">
+          <div className="cart-product-container">
+            <div className='checkout'>
+            <h3 className="titles-1">CART</h3>
+            <ul className="specs-1">
+                <li>price:</li>
+                <li className="float">150</li>
+                <li></li>
+                <li>total:</li>
+                <li className="float">150</li>
+              </ul>
+              <StripeCheckout
+                token={this.onToken}
+                stripeKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY}
+                amount={this.state.amount}
+              />
 
-          <button onClick={() => this.props.deleteItem(cartItem.cart_id)}>handleDelete</button>
-          <img src={cartItem.image} />
+            </div>
+
+            <div className="product-info">
+              <img src={cartItem.image} className="cart-prod-img" />
+              <h1 className="cart-text">{cartItem.name}</h1>
+              <p className="price">US${cartItem.price}</p>
+                <input type="number" placeholder={cartItem.quantity} onChange={(e) => this.handleQuantity(e.target.value, cartItem.cart_id)} className="input"/>
+                <button onClick={() => this.handleQuantityClick()} className="cart-icon"><img src="https://image.flaticon.com/icons/svg/61/61444.svg" alt="Update Quantity" title="Update Quantity"/></button>
+                <button onClick={() => this.props.deleteItem(cartItem.cart_id)}  className="cart-icon">
+                <img src="https://image.flaticon.com/icons/svg/61/61391.svg" />
+                </button>
+            
+            </div>
+
+           
+            
+            </div>
+          </div>
         </div>
       )
     })
     return (
     <div> 
       <NavBar />
-        <header className="cart-background-img">
-        </header>
-        {cart}
-        <StripeCheckout
-          token={this.onToken}
-          stripeKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY}
-          amount={this.state.amount}
-        />
-      </div>
+      <header className="cart-background-img">
+       
+            {cart}
+            
+      </header>
+    </div>    
+    
     );
   }
 }

@@ -34,9 +34,9 @@ class KeyBoards extends Component {
                    <div className="product-containe">
                     <div className="key-boxing">
                                 <img src={getKeyBoards.image} className="key-img"/>
-                                <Link to={`product/${getKeyBoards.id}`}><button>Details</button></Link>
-                                <h1 className="text-color">{getKeyBoards.name}</h1>
-                                <p className="text-color">Price: ${getKeyBoards.price}</p>
+                                <h1 className="name-text-color">{getKeyBoards.name}</h1>
+                                <Link to={`product/${getKeyBoards.id}`}><button className="key-view-detail">View Details</button></Link>
+                                {/* <p className="name-text-color">Price: ${getKeyBoards.price}</p> */}
                         </div>
                     </div>
          

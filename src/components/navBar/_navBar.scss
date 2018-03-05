@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Play');
-
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 .main-nav {
     overflow: hidden;
@@ -8,9 +8,9 @@
     width: 1100px;
     margin: 0 auto;
     margin-top: 0px;
-    margin-right: 400px;
+    // margin-right: 400px;
     margin-bottom: 0px;
-    margin-left: 400px;
+    margin-left: 170px;
     background-color: rgb(31, 31, 31);
     position: absolute;
     
@@ -26,9 +26,9 @@
     width: 1110px;
     margin: 0 auto;
     margin-top: 0px;
-    margin-right: 395px;
+    // margin-right: 395px;
     margin-bottom: 0px;
-    margin-left: 395px;
+    margin-left: 165px;
     background-color: rgb(41, 41, 41);
     position: absolute;
     border-bottom-left-radius: 4px;
@@ -53,7 +53,7 @@ $navBtnWidth: 100px;
     color: #44D62C;
     background-color: rgb(51, 51, 51);
     border-color: rgb(41, 41, 41) ;
-    font-family: "play";
+    @extend %thefont;
 }
 
 .razor-logo {
@@ -96,4 +96,10 @@ $navBtnWidth: 100px;
 .keyboard {
     margin-left: 510px;
    
+}
+
+
+.icon{
+    height: 40px;
+    width: 40px;
 }

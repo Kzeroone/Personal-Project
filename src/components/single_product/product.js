@@ -34,13 +34,38 @@ addProduct(prod, props){
     let products = this.props.product.map((getProduct, i )=>{
       return (
         
-        
         <div>
-          <h1 className='product-text'>{getProduct.name}</h1> 
-          <div key={i} className="img">
-            <img src={getProduct.image} className="img-handler"/>
-          </div>
-          <button onClick={() => this.addProduct(getProduct.id)}>Add to Cart</button> 
+          <section className="product-background-img">
+            <section className="product-container-2">
+              <img src={getProduct.label} className="label"/>
+              <img src={getProduct.full_img} className="img-large"/>
+            </section>
+            {/* <img src={getProduct.effects} className="img-large"/> */}
+            {/* <h1 className='product-text'>{getProduct.name}</h1> */}
+        
+            <div className="product-container-border">
+              <div className="product-container">
+                {/* <h1 className="description">DESCRIPTION</h1> */}
+                  <button onClick={() => this.addProduct(getProduct.id)} className="buy-now">BUY NOW</button> 
+                  <div key={i} className="img">
+                    {/* <img src={getProduct.image} className="img-handler"/> */}
+                    <h3 className="titles">SPECS</h3>
+                    <ul className="specs">
+                      <li>-Razer™ Mechanical Switches with 50 g actuation force</li>
+                      <li>-10 key roll-over anti-ghosting</li>
+                      <li>-1000Hz Ultrapolling</li>
+                      <li>-Approximate size: 366mm/14.40 in (Width) x 154mm/6.06 in (Height) x 30mm/1.18 in (Depth)</li>
+                      <li>-Approximate weight: 950g/2.09lbs</li>
+                    </ul>
+                  </div>
+                 
+                  <div className="img-2">
+                    <h3 className="titles">POWERED BY RAZER CHROMA</h3>
+                    <p className="specs">The Razer BlackWidow X Tournament Edition Chroma features individually programmable backlit keys with 16.8 million color options, all easily set through Razer Synapse. From preloaded lighting effects for different types of games, to your own custom uniquely programmed palette of colors, you can effortlessly enhance your gaming experience in a way that is unique only to you.</p>
+                  </div>
+              </div>
+            </div>
+          </section>
         </div>
      
       )
@@ -51,15 +76,15 @@ addProduct(prod, props){
 
     return(
       <div> 
-        {/* <NavBar /> */}
-        <section className="product-background-img">
+        <NavBar />
+              {products}
+        {/* <section className="product-background-img">
           <div className="product-container-border">
             <div className="product-container">
               <h1 className="description">DESCRIPTION</h1>
-              {products}
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     );
   }

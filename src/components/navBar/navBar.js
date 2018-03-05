@@ -12,9 +12,9 @@ function NavBar(){
       <section className='main-nav-border'></section>
         <header className="main-nav ">
           
-           <Link to="/"> <div className='razor-logo'>
-
-            </div></Link>
+          <Link to="/">
+            <div className='razor-logo'></div>
+          </Link>
           <div>
             <Link to="/cart"><button className='btn cart'>CART</button></Link>
           </div>
@@ -32,11 +32,21 @@ function NavBar(){
           </div>
 
           <div>
-            <Link to="/headsets"><button className='btn headset'>HEADSETS</button></Link>
+            <Link to="/headsets">
+              <button className='btn headset'>
+              <img src="https://d1urewwzb2qwii.cloudfront.net/sys-master/images/he0/h24/8859085701150/wired-headset.svg" className="icon"/>
+              <h1>HEADSETS</h1>
+              </button>
+            </Link>
           </div>
 
           <div>
-          <Link to="/keyboards"><button className='btn keyboard'>KEYBOARDS</button></Link>
+            <Link to="/keyboards">
+              <button className='btn keyboard'>
+                <img src="https://d1urewwzb2qwii.cloudfront.net/sys-master/images/h1d/hfd/8907910938654/essential-keyboards.svg" className="icon"/>
+                <h1>KEYBOARDS</h1>
+              </button>
+            </Link>
           </div>
           
          

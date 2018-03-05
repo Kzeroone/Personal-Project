@@ -39,8 +39,10 @@
 
 
 
-.text-color {
-    color:#44D62C
+.name-text-color {
+    color:#fff;
+    padding-left: 5px;
+    @extend %thefont
 }
 
 .product-containe {
@@ -62,7 +64,15 @@
     width: 300px
 }
 
-
+.key-view-detail {
+    color: #44D62C;
+    border: none;
+    background: none;
+    // float: right;
+    padding: 10px 0px 5px 5px;
+    font-size: 12px
+    
+}
 
 
 

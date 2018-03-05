@@ -3,6 +3,21 @@
 
 //http://image.noelshack.com/fichiers/2015/14/1428096341-razer-rendering.jpg
 //https://www.cinema5d.com/wp-content/uploads/2017/01/Razer-Valerie-_-featured.jpg
+
+%line{
+    height: 2px;
+    background-color: white;
+    width: 50px;
+}
+
+.line{
+    height: 2px;
+    background-color: white;
+    width: 50vw;
+    margin: 0px 0px 20px 0px;
+}
+
+
 .cart-background-img{
    background:  url('https://www.cinema5d.com/wp-content/uploads/2017/01/Razer-Valerie-_-featured.jpg') no-repeat center center;
    height: 100vh;
@@ -26,4 +41,122 @@
 
 .quote h3 {
     font-size: 20px
+}
+
+.cart-product-container-border{
+    background-color:    rgb(51, 51, 51);
+    width: 100vw;
+    height: 50vh;
+    margin: 250px 0 0 0 ;
+    @extend %absolute, %round;
+}
+
+.cart-product-container {
+    background-color:  rgb(31, 31, 31);
+    width: 99.5vw;
+    height: 49.2vh;
+    margin: 3.5px 3.5px 3.5px 3.5px;
+    position: absolute;
+    @extend %round;
+}
+
+.product-info {
+    border-color: black;
+    margin: 25px 0px 0px 100px;
+    height: 35vh;
+    width: 40vw;
+    border-bottom: solid 2px;
+    border-top: solid 2px ;
+    
+}
+
+.cart-prod-img {
+    background-color: black;
+    @extend %round;
+    margin: 23px 0px 0px 0px;
+    float: left;
+    
+}
+
+
+.cart-text{
+    @extend %thefont;
+    color: #fff;
+    font-size: 20px;
+    // margin: 0px 0px 0px 400px;
+    padding: 3px 3px 3px 3px; 
+}
+
+.price {
+    float: right;
+    font-size: 30px;
+    @extend %thefont, %razor;
+    margin-top: 7rem;
+}
+
+.input {
+    border-color: black;
+    background-color: #1f1f1f;
+    color: gray;
+    height: 40px;
+    width: 40px;
+    margin-left: 6rem;
+   
+}
+
+
+
+.cart-icon {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: none;
+    padding: 10px 10px 10px 10px;
+    margin-top: 5rem;
+    
+    
+}
+
+.cart-icon img {
+    height: 40px;
+    width: 40px;
+}
+
+
+.checkout{
+    // background-color:black;
+    // color:  #44D62C;
+    // text-align: center;
+    // height: 300px;
+    margin: 15px 1px 1px 1400px;
+    // position: absolute;
+    background: #111;
+    border-bottom: 1px solid #44D62C;
+    height: 45vh;
+    width: 20vw;
+    @extend %round;
+    position: absolute;
+}
+
+
+
+
+.titles-1{
+    @extend %thefont;
+    @extend %razor;
+    font-size: 40px;
+    padding: 5px 0px 0px 10px;
+    margin-left: 8.5rem
+}
+
+.specs-1 {
+    @extend %thefont;
+    color:rgb(161, 161, 161);
+    font-size: 25px;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 10px;
+}
+
+.float{
+    margin-left: 19rem;
 }
