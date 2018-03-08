@@ -60,7 +60,9 @@ class KeyBoards extends Component {
  }
 
  function mapStateToProps(state){
-     return state
+     return {
+        keyboards: state.keyboards
+        }
  }
 
 export default connect(mapStateToProps, {getKeyBoards})(KeyBoards);

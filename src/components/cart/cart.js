@@ -30,9 +30,10 @@ class Cart extends Component {
   }
 
   handleQuantity(qty, id){
-    console.log('ID',id)
+    // console.log('ID',id)
     var qtyCopy = Object.assign({}, this.state.quantity)
     qtyCopy[id] = qty
+    console.log("the test:",qtyCopy[id])
     this.setState({
       quantity: qtyCopy
     }, () => console.log(this.state.quantity))
