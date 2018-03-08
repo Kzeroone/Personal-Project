@@ -112,7 +112,7 @@ export default function reducer(state = initialState, action){
         case CHANGE_QTY:
         return Object.assign({}, state, {quantity: action.payload})
         case DELETE_ITEM + '_FULFILLED':
-        return state
+        return Object.assign({}, state, {fullCart: action.payload})
         default:
         return state
     }

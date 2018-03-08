@@ -105,13 +105,14 @@ app.get('/api/cart', (req, res) => {
 })
 
 app.post('/api/cart/:id', (req, res ) => {
-    console.log('User',req.session.passport.user);
+    // console.log('User',req.session.passport.user);
     const db = app.get('db');
-    db.add_to_cart([req.params.id, req.session.passport.user])
+    db.add_to_cart([req.params.id , req.session.passport.user])
     .then(response => {
         res.send(response);
     })
 })
+// 
 
 app.put('/api/cart', (req, res) => {
     const db = app.get('db');
@@ -131,6 +132,7 @@ app.delete('/api/cart/:id', (req, res) => {
     const id = req.params.id
 
     db.delete_from_cart([id]).then( response =>{
+        console.log(response);
         res.send(response)
     })
 })

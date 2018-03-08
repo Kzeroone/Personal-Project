@@ -56,25 +56,6 @@ class Cart extends Component {
     let cart = this.props.fullCart.map((cartItem,i) => {
       return(
         <div key={i}>
-         <div className="cart-product-container-border">
-          <div className="cart-product-container">
-            <div className='checkout'>
-            <h3 className="titles-1">CART</h3>
-            <ul className="specs-1">
-                <li>price:</li>
-                <li className="float">150</li>
-                <li></li>
-                <li>total:</li>
-                <li className="float">150</li>
-              </ul>
-              <StripeCheckout
-                token={this.onToken}
-                stripeKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY}
-                amount={this.state.amount}
-              />
-
-            </div>
-
             <div className="product-info">
               <img src={cartItem.image} className="cart-prod-img" />
               <h1 className="cart-text">{cartItem.name}</h1>
@@ -86,21 +67,40 @@ class Cart extends Component {
                 </button>
             
             </div>
-
-           
-            
             </div>
-          </div>
-        </div>
+       
+      )
+    })
+
+    let checkOut = this.props.fullCart.map((cartItem,i) => {
+      return(
+          <div className='checkout'>
+            <h3 className="titles-1">CART</h3>
+            <ul className="specs-1">
+                <li>price:</li>
+                <li className="float">{cartItem.price}</li>
+                <li></li>
+                <li>total:</li>
+                <li className="float">{cartItem.price}</li>
+              </ul>
+              <StripeCheckout
+                token={this.onToken}
+                stripeKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY}
+                amount={this.state.amount}
+              />
+            </div> 
       )
     })
     return (
     <div> 
       <NavBar />
       <header className="cart-background-img">
-       
+      <div className="cart-product-container-border">
+          <div className="cart-product-container">
+            {checkOut}
             {cart}
-            
+          </div>
+      </div>  
       </header>
     </div>    
     

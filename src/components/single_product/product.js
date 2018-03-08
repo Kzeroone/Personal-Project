@@ -4,6 +4,7 @@ import NavBar from '../navBar/navBar.js'
 import axios from 'axios'
 import { connect } from 'react-redux'
 import { getProduct, addToCart } from '../../ducks/reducer'
+import { ToastContainer, toast } from 'react-toastify';
 
 class SingleProduct extends Component {
   constructor(props){
@@ -28,7 +29,7 @@ addProduct(prod, props){
   }
 }
   
-
+notify = () => toast("Item Added to cart");
  render(){
     console.log(this.props)
     let products = this.props.product.map((getProduct, i )=>{
@@ -46,7 +47,10 @@ addProduct(prod, props){
             <div className="product-container-border">
               <div className="product-container">
                 {/* <h1 className="description">DESCRIPTION</h1> */}
-                  <button onClick={() => this.addProduct(getProduct.id)} className="buy-now">BUY NOW</button> 
+                  <div>
+                  <button onClick={() => {(this.addProduct(getProduct.id)); (this.notify())}} className="buy-now">BUY NOW</button> 
+                  <ToastContainer />
+                  </div>
                   <div key={i} className="img">
                     {/* <img src={getProduct.image} className="img-handler"/> */}
                     <h3 className="titles">SPECS</h3>

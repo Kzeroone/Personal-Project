@@ -27,3 +27,19 @@
 .quote h3 {
     font-size: 20px
 }
+
+.home-button{
+    @extend  %round, %thefont;
+    color: black;
+    background-color: #44D62C;
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    margin: 37rem 0rem 0rem 58rem;
+    border-color: black;
+    border: 1px 1px 1px 1px;
+    font-weight: bold;
+    font-size: 14px;
+}
