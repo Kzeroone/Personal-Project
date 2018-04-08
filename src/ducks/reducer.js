@@ -65,7 +65,7 @@ export function addToCart(id, userId){
     console.log(userId);
     let add = axios.post(`/api/cart/${id}`).then(res => {
         return res.data;
-    })
+    }) 
 
     return{
         type: ADD_TO_CART,

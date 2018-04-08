@@ -23,11 +23,6 @@ componentDidMount(){
 addProduct(prod, props){
   console.log('Function product id', prod)
   this.props.addToCart(this.props.match.params.id, this.props.user.id)
-  // if(prod){
-  //    this.props.addToCart(this.props.match.params.id, this.props.user.id)
-  // }else{
-  //   return alert("Item is already in cart")
-  // }
 }
   
 notify = () => toast("Item Added to cart");

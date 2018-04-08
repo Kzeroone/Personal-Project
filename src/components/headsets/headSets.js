@@ -57,3 +57,9 @@ function mapStateToProps(state){
 }
 
 export default connect(mapStateToProps, {getHeadSets})(HeadSets);
+
+
+
+
+
+

@@ -109,6 +109,7 @@ app.post('/api/cart/:id', (req, res ) => {
     const db = app.get('db');
     db.add_to_cart([req.params.id , req.session.passport.user])
     .then(response => {
+        
         res.send(response);
     })
 })

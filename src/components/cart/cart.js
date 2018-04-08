@@ -33,13 +33,13 @@ class Cart extends Component {
     // console.log('ID',id)
     var qtyCopy = Object.assign({}, this.state.quantity)
     qtyCopy[id] = qty
-    console.log("the test:",qtyCopy[id])
+    console.log("the test:", qtyCopy[id])
     this.setState({
       quantity: qtyCopy
     }, () => console.log(this.state.quantity))
   }
 
-  handleQuantityClick(id){
+  handleQuantityClick(id){  
     axios.put(`/api/cart`, {quantity: this.state.quantity}).then(res => { console.log(res) })
   }
   
